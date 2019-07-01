@@ -159,9 +159,4 @@
             android:text=" "
             android:textSize="53sp"
     />
-
-
-
-
-
 </android.support.constraint.ConstraintLayout>
