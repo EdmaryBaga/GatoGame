@@ -4,11 +4,36 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <TextView
+            android:id="@+id/ganador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="34dp"
+            android:text="Aun no hay ganador"
+            android:textSize="30sp"
+            />
+    <Button
+        android:id="@+id/reiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar partida"
+        app:layout_constraintTop_toBottomOf="@id/ganador"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+    />
+
+
     <Button
             android:id="@+id/btn_1_1"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@color/colorbtn"
+            android:text=" "
+            android:textSize="53sp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -20,6 +45,8 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@color/colorbtn"
+            android:text=" "
+            android:textSize="53sp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toLeftOf="@id/btn_1_3"
